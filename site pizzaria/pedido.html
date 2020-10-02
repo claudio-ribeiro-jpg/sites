@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Faça o seu pedido!</title>
+
+        <style>
+            fieldset{
+                width: 1000px;
+            }
+        </style>
+        <meta charset="UTF-8">
+    </head>
+    <body bgcolor="#f4f19d" background="back.jpeg">
+       <h1 align="center"><img src="logo1.png" width="15%"></center></h1>
+       <a href="index.html"><img src="voltar.png" alt="num deu" width="15%"></a>
+
+        <br>
+        <br>
+        <form action="">
+        <fieldset width="200px">
+            <legend><font size="4" color="red">Preencha o formulário abaixo para fazer o seu pedido!</font></legend>
+            <font color="red">Nome:</font> <input type="text" name="nome" size="50" required>
+            <br>
+            <br>
+          <font color="red">Endereço e número:</font> <input type="text" name="endereço" size="30" required>
+        <br><br>
+        <font color="red">Monte seu pedido:</font>
+        <select name="pizza" required>
+            <option value="">Selecione o sabor</option>
+            <option value="calabresa">Calabresa</option>
+            <option value="port">Portuguesa</option>
+            <option value="marg">Marguerita</option>
+            <option value="mucarela">Muçarela</option>
+            <option value="nap">Napolitano</option>
+            <option value="briga">Brigadeiro</option>
+        </select>
+        <select name="tamanho" required>
+            <option value="">Selecione o tamanho</option>
+            <option value="gran">Grande</option>
+            <option value="med">Média</option>
+            <option value="peq">Pequena</option>
+        </select>
+        <br>
+        <br>
+        <select name="acomp">
+            <option value="">Selecione o acompanhamento</option>
+            <option value="tomat">Tomate</option>
+            <option value="cheddar">Cheddar</option>
+            <option value="maio">Maionese</option>
+            <option value="catu">Catupiry</option>
+        </select>
+        <select name="bebidas">
+            <option value="">Selecione a bebida</option>
+            <option value="agu">Água</option>
+            <option value="cerv">Cerveja</option>
+            <option value="refri">Refrigerante</option>
+        </select>
+        <br><br>
+        <font color="red">Observações:</font><br> <textarea rows="10" cols="50" style="resize:none" color="red">Observações</textarea>
+        <p><font size="5" color="red">(Antes de confirmar o pedido, confira se todas as informações estão corretas)</font></p>
+        <input type="submit" value="ENVIAR">
+        <input type="reset" value="CANCELAR">
+        </fieldset>
+        </form>
+    </body>
+</html>
